@@ -1,0 +1,31 @@
+name: "💡 Preset request"
+description: Suggest an preset
+title: "preset: "
+labels: ["enhancement", "preset request"]
+assignees:
+  - daudix-UFO
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to contribute!
+  - type: textarea
+    id: description
+    attributes:
+      label: Preset description
+      description: A clear and concise description of what preset is requested. Please include link to the original color palette
+    validations:
+      required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: List any other information that is relevant to your request, such as perfered color variant, color of specific element and etc.
+    validations:
+      required: false
+  - type: checkboxes
+    attributes:
+      label: Did you read the Code of Conduct?
+      options:
+        - label: I have read the [Code of Conduct](https://github.com/GradienceTeam/Gradience/blob/main/CODE_OF_CONDUCT.md).
+          required: true
